@@ -106,13 +106,20 @@ evidence/
 
 Screenshots
 Nmap service discovery
-[Nmap service discovery](screenshots/01-nmap-ssh-service-discovery.png)
+
+![Nmap service discovery](screenshots/01-nmap-ssh-service-discovery.png)
+
 Ubuntu listening ports
-[Ubuntu listening ports](screenshots/02-ubuntu-ss-listening-ports.png
+
+![Ubuntu listening ports](screenshots/02-ubuntu-ss-listening-ports.png
+
 Wireshark SYN scan
-[Wireshark SYN scan](screenshots/03-wireshark-syn-scan.png)
+
+![Wireshark SYN scan](screenshots/03-wireshark-syn-scan.png)
+
 SSH authentication logs
-[SSH authentication logs](screenshots/04-ssh-authentication-logs.png
+
+![SSH authentication logs](screenshots/04-ssh-authentication-logs.png
  
 What I learned
 This lab helped me get more comfortable with:
