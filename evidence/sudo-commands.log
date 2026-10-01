@@ -1,0 +1,115 @@
+Sep 14 08:24:53 ubuntu-lab sudo[1469]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/id addr add 192.168.56.20/24 dev enp0s8 sudo ip link set enp 0s8 up
+Sep 14 08:25:13 ubuntu-lab sudo[1488]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/id addr add 192.168.56.20/24 dev enp0s8
+Sep 14 08:26:08 ubuntu-lab sudo[1507]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ip addr add 192.168.56.20/24 dev enp0s8
+Sep 14 08:26:22 ubuntu-lab sudo[1527]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ip addr add 192.168.56.20/24 dev enp0s8 sudo ip link set enp 0s8 up
+Sep 14 08:26:34 ubuntu-lab sudo[1541]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ip addr add 192.168.56.20/24 dev enp0s8
+Sep 14 08:27:00 ubuntu-lab sudo[1554]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ip link set enp 0s8 up
+Sep 14 12:24:32 ubuntu-lab sudo[1426]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ip adr add 192.168.56.20/24 dev enp0s8
+Sep 14 12:24:49 ubuntu-lab sudo[1440]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ip addr add 192.168.56.20/24 dev enp0s8
+Sep 14 12:25:07 ubuntu-lab sudo[1456]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ip link set dev enp0s8 up
+Sep 14 12:26:11 ubuntu-lab sudo[1505]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+Sep 14 12:27:19 ubuntu-lab sudo[1518]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+Sep 14 12:27:39 ubuntu-lab sudo[1538]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/systemctl enable ssh
+Sep 14 12:28:09 ubuntu-lab sudo[1712]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+Sep 14 12:30:49 ubuntu-lab sudo[1736]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+Sep 14 12:31:34 ubuntu-lab sudo[1749]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Sep 14 12:32:15 ubuntu-lab sudo[1778]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/ufw status verbose
+Sep 14 12:35:40 ubuntu-lab sudo[1801]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22
+Sep 14 12:43:11 ubuntu-lab sudo[1834]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22
+Sep 14 12:45:45 ubuntu-lab sudo[1847]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22
+Sep 14 13:12:07 ubuntu-lab sudo[1953]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/50-cloud-init.yaml
+Sep 14 13:16:46 ubuntu-lab sudo[1983]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/cat /etc/netplan/00-installer-config.yaml
+Sep 14 13:17:39 ubuntu-lab sudo[2000]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/00-installer-config.yaml
+Sep 14 13:27:27 ubuntu-lab sudo[2021]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/netplan generate
+Sep 14 13:28:49 ubuntu-lab sudo[2091]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/chmod 600 /etc/netplan/50-cloud-init.yaml
+Sep 14 13:29:06 ubuntu-lab sudo[2104]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/netplan generate
+Sep 14 13:29:59 ubuntu-lab sudo[2172]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/netplan apply
+Sep 15 05:54:04 ubuntu-lab sudo[1552]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+Sep 15 05:59:45 ubuntu-lab sudo[1706]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22
+Sep 15 06:04:44 ubuntu-lab sudo[1846]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22
+Sep 15 06:09:45 ubuntu-lab sudo[1863]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22
+Sep 15 06:12:42 ubuntu-lab sudo[1974]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22 and (tcp[tcpflags] & (tscp syn | tcp-rst) !=0)
+Sep 15 06:15:46 ubuntu-lab sudo[1989]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22 and tcp[tcpflags] & tcp-syn != 0
+Sep 15 06:21:20 ubuntu-lab sudo[2921]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/tcpdump -ni enp0s8 tcp port 22 and tcp[tcpflags] & tcp-syn != 0
+Sep 17 19:26:36 ubuntu-lab sudo[1501]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh today --no-pager -n 30
+Sep 17 19:26:46 ubuntu-lab sudo[1515]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh today --no-pager -n 30
+Sep 17 19:27:56 ubuntu-lab sudo[1528]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh 15.09.2026 --no-pager -n 30
+Sep 17 19:29:32 ubuntu-lab sudo[1544]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh -n 30 --no-pager
+Sep 17 19:43:52 ubuntu-lab sudo[1577]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -w -n --no-pager
+Sep 17 19:44:16 ubuntu-lab sudo[1590]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh -n --no-pager
+Sep 17 20:02:02 ubuntu-lab sudo[1852]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh -n 15 --no-pager
+Sep 17 20:10:24 ubuntu-lab sudo[1875]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh -n --no-pager
+Sep 17 20:11:01 ubuntu-lab sudo[1891]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh -n --no-pager
+Sep 19 18:09:46 ubuntu-lab sudo[1529]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Sep 20 15:10:12 ubuntu-lab sudo[9985]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 15:15:01 ubuntu-lab sudo[10142]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --since 5 minutes ago --no-pager
+Sep 20 15:16:56 ubuntu-lab sudo[10159]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 15:17:37 ubuntu-lab sudo[10198]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 15:29:07 ubuntu-lab sudo[10423]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 15:32:31 ubuntu-lab sudo[10446]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 15:49:30 ubuntu-lab sudo[10580]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u --no-pager
+Sep 20 15:50:55 ubuntu-lab sudo[10600]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u --no-pager
+Sep 20 15:51:04 ubuntu-lab sudo[10614]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u --no-pager
+Sep 20 15:57:07 ubuntu-lab sudo[10631]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u --no-pager
+Sep 20 15:57:36 ubuntu-lab sudo[10645]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:02:26 ubuntu-lab sudo[10672]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:03:31 ubuntu-lab sudo[10687]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:05:37 ubuntu-lab sudo[10705]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:05:40 ubuntu-lab sudo[10720]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:05:47 ubuntu-lab sudo[10738]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:06:46 ubuntu-lab sudo[10756]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:08:04 ubuntu-lab sudo[10772]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:08:38 ubuntu-lab sudo[10788]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:08:54 ubuntu-lab sudo[10803]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:11:23 ubuntu-lab sudo[10822]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:11:47 ubuntu-lab sudo[10858]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:26:32 ubuntu-lab sudo[10886]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager -E Failed password|Accepted
+Sep 20 16:26:53 ubuntu-lab sudo[10899]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 20 16:36:06 ubuntu-lab sudo[10930]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager
+Sep 20 16:40:46 ubuntu-lab sudo[10950]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager
+Sep 20 16:46:38 ubuntu-lab sudo[11034]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ls /root
+Sep 20 16:52:02 ubuntu-lab sudo[11066]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager
+Sep 20 16:52:29 ubuntu-lab sudo[11093]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager
+Sep 20 16:56:01 ubuntu-lab sudo[11119]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/poweroff
+Sep 20 16:56:06 ubuntu-lab sudo[11132]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/poweroff
+Sep 20 16:56:13 ubuntu-lab sudo[11145]: student : TTY=/dev/tty4 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/poweroff
+Sep 24 11:14:45 ubuntu-lab sudo[1600]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 24 23:28:12 ubuntu-lab sudo[2278]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 24 23:30:22 ubuntu-lab sudo[2293]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 24 23:30:42 ubuntu-lab sudo[2334]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 24 23:31:25 ubuntu-lab sudo[2350]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 24 23:32:31 ubuntu-lab sudo[2367]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 24 23:32:50 ubuntu-lab sudo[2381]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 24 23:33:27 ubuntu-lab sudo[2395]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 25 08:15:26 ubuntu-lab sudo[2951]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ls /root journalctl -u ssh --no-pager
+Sep 25 08:25:26 ubuntu-lab sudo[3019]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/python3 -m http.server 33 -bind 0.0.0.0
+Sep 25 08:26:19 ubuntu-lab sudo[3034]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Sep 25 08:42:28 ubuntu-lab sudo[3069]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/python3 -m http.server 33 -bind 0.0.0.0
+Sep 25 08:43:59 ubuntu-lab sudo[3083]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/python3 -m http.server 33
+Sep 25 14:30:06 ubuntu-lab sudo[3508]: student : TTY=/dev/pts/1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ls /root
+Sep 25 14:30:31 ubuntu-lab sudo[3527]: student : TTY=/dev/pts/1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Sep 25 14:33:21 ubuntu-lab sudo[3552]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh
+Sep 25 14:46:54 ubuntu-lab sudo[3587]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 25 15:00:31 ubuntu-lab sudo[3611]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh
+Sep 25 15:01:20 ubuntu-lab sudo[3633]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh
+Sep 28 07:02:05 ubuntu-lab sudo[1486]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Sep 28 07:02:57 ubuntu-lab sudo[1507]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Sep 28 07:08:39 ubuntu-lab sudo[1631]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ls /root
+Sep 28 07:09:35 ubuntu-lab sudo[1648]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Sep 28 07:12:30 ubuntu-lab sudo[1668]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 28 07:12:41 ubuntu-lab sudo[1682]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 28 07:13:54 ubuntu-lab sudo[1697]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --since 10 minutes ago --no-pager
+Sep 28 07:20:10 ubuntu-lab sudo[1770]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --since 10 minutes ago --no-pager
+Sep 28 07:22:00 ubuntu-lab sudo[1794]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --since 10 minutes ago --no-pager
+Sep 28 07:22:10 ubuntu-lab sudo[1812]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --since 10 minutes ago --no-pager
+Sep 28 07:27:23 ubuntu-lab sudo[1833]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 28 07:33:26 ubuntu-lab sudo[1981]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Sep 28 07:37:53 ubuntu-lab sudo[2003]: student : TTY=/dev/pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager
+Sep 28 08:43:52 ubuntu-lab sudo[2092]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ssh @kali192.168.56.10
+Sep 28 14:39:23 ubuntu-lab sudo[2623]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/poweroff
+Sep 28 14:39:35 ubuntu-lab sudo[2637]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/sbin/poweroff
+Oct 01 05:13:57 ubuntu-lab sudo[1466]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Oct 01 05:14:59 ubuntu-lab sudo[1499]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/ss -tulpn
+Oct 01 07:11:06 ubuntu-lab sudo[1833]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Oct 01 07:16:35 ubuntu-lab sudo[1895]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl -u ssh --no-pager
+Oct 01 07:22:09 ubuntu-lab sudo[1959]: student : TTY=/dev/tty1 ; PWD=/home/student ; USER=root ; COMMAND=/usr/bin/journalctl --no-pager
