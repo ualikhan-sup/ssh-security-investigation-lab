@@ -34,6 +34,16 @@ Port: `TCP/22`
 T1110.001 — Password Guessing  
 T1046 — Network Service Discovery  
 
+## Detection
+
+This activity is covered by the following detection rules:
+
+- `detections/sigma_ssh_password_guessing.yml`
+- `detections/sigma_ssh_password_guessing_correlation.yml`
+- `detections/sigma_ssh_failed_then_success.yml`
+
+The most relevant detection for this incident is the failed-to-success correlation rule because the observed activity contains failed SSH authentication attempts followed by a successful login from the same source.
+
 ## Detection context
 
 The activity was identified through Linux SSH authentication logs and manual log analysis.
