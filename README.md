@@ -1,21 +1,24 @@
-# SSH Security Investigation Lab
+# SOC L1 Home Lab — SSH Password Guessing Detection & Triage
 
-This is a small home lab I built to practice basic network and Linux security analysis.
+This lab is focused on basic SOC L1 investigation of SSH activity in an isolated VirtualBox environment.
 
-The setup uses two virtual machines in VirtualBox:
+I used Kali Linux as the source machine and Ubuntu Server as the monitored host. The goal was to generate and investigate network scanning, failed SSH authentication attempts, a successful login, and post-login sudo activity.
 
-- Kali Linux — 192.168.56.10
-- Ubuntu Server — 192.168.56.20
-- Internal network — 192.168.56.0/24
-- SSH — TCP/22
+The investigation combines network traffic, Linux authentication logs and command activity.
 
-The main idea was to look at the same activity from different sides: network scanning from Kali, packet analysis in Wireshark, and authentication/system logs on Ubuntu.
+MITRE ATT&CK mapping:
+
+T1046 — Network Service Discovery  
+T1110.001 — Password Guessing
+
+Environment:
+
+Kali Linux — 192.168.56.10  
+Ubuntu Server — 192.168.56.20  
+Internal network — 192.168.56.0/24  
+SSH — TCP/22
 
 Lab setup
-
-Kali Linux was used as the client and analysis machine.
-
-Ubuntu Server was used as the target system with OpenSSH enabled.
 
 ```text
 Kali Linux
