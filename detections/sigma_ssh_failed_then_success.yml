@@ -1,0 +1,55 @@
+title: SSH Failed Login Event
+name: ssh_failed_login
+status: experimental
+description: Detects a failed SSH authentication attempt on Linux.
+
+logsource:
+  product: linux
+  service: sshd
+
+detection:
+  selection:
+    message|contains: "Failed password"
+  condition: selection
+
+---
+
+title: SSH Successful Login Event
+name: ssh_successful_login
+status: experimental
+description: Detects a successful SSH authentication on Linux.
+
+logsource:
+  product: linux
+  service: sshd
+
+detection:
+  selection:
+    message|contains: "Accepted password"
+  condition: selection
+
+---
+
+title: SSH Failed Logins Followed by Successful Login
+status: experimental
+description: Detects failed SSH authentication attempts followed by a successful login from the same source context.
+
+correlation:
+  type: temporal_ordered
+  rules:
+    - ssh_failed_login
+    - ssh_successful_login
+  group-by:
+    - source_ip
+    - username
+  timespan: 5m
+
+falsepositives:
+  - Legitimate user entering an incorrect password before successful authentication
+  - Administrative testing in a lab environment
+
+level: high
+
+tags:
+  - attack.credential-access
+  - attack.t1110.001
