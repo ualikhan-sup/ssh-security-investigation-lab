@@ -20,6 +20,7 @@ User: student
 - sudo-commands.log
 - Wireshark capture
 - Nmap scan
+- Splunk SIEM dashboard and triggered alert
 
 ## Indicators
 
@@ -48,6 +49,31 @@ The most relevant detection for this incident is the failed-to-success correlati
 
 The activity was identified through Linux SSH authentication logs and manual log analysis.
 
+## Splunk SIEM Detection
+
+The Ubuntu Server sends live authentication logs from `/var/log/auth.log` to Splunk Enterprise through the Splunk Universal Forwarder.
+
+In Splunk, the following activity is monitored:
+
+- failed SSH authentication attempts
+- successful SSH authentication
+- source IP activity
+- username activity
+- failed-to-success authentication patterns
+
+A scheduled alert checks the last 5 minutes of SSH authentication events and triggers when the detection query returns a suspicious pattern.
+
+The alert was tested by generating live SSH activity from Kali Linux against the Ubuntu Server.
+
+The test produced:
+
+- multiple failed SSH authentication attempts
+- a successful SSH login
+- a triggered Splunk alert
+- a matching entry in the SOC SSH Monitoring dashboard
+
+This confirmed that the detection works on live log data rather than only on previously collected evidence.
+
 ## Timeline
 
 14:23:31 — Failed SSH authentication for user `student` from `192.168.56.10`.
@@ -75,6 +101,8 @@ Suspicious activity — further investigation required.
 The observed SSH authentication pattern could be caused by a legitimate user entering the wrong password, but the successful login followed by sudo activity makes the session worth reviewing.
 
 At this stage, there is not enough evidence to confirm account compromise.
+
+The same authentication pattern was later reproduced in the lab and successfully detected by Splunk in real time.
 
 ## Recommendations
 
