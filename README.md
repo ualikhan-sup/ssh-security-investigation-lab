@@ -160,6 +160,25 @@ evidence/
 └── sudo-commands.log
 ```
 
+Splunk SIEM
+
+For the next stage of the lab I connected the Ubuntu Server to Splunk Enterprise using the Splunk Universal Forwarder.
+
+Live authentication logs from `/var/log/auth.log` are forwarded to Splunk and indexed with the `linux_secure` sourcetype.
+
+In Splunk I created searches and detections for SSH authentication activity, including failed logins, successful logins and failed-to-success login patterns.
+
+I also created a scheduled alert that checks the last 5 minutes of events and triggers when multiple failed SSH logins are followed by a successful login.
+
+The dashboard includes:
+
+- failed SSH logins by source IP
+- successful SSH logins by source IP
+- SSH authentication timeline
+- suspicious authentication windows
+
+This moved the lab from manual log analysis to live SIEM monitoring and alerting.
+
 Screenshots
 
 Nmap service discovery
@@ -177,6 +196,10 @@ Wireshark SYN scan
 SSH authentication logs
 
 ![SSH authentication logs](screenshots/04-ssh-authentication-logs.png)
+
+Splunk SIEM dashboard
+
+![Splunk SIEM dashboard](screenshots/05-splunk-siem-dashboard.png)
 
 What I learned
 
